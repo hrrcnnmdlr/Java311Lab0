@@ -9,13 +9,13 @@ public class Variant14Test {
     // Int14
     @Test(dataProvider = "integerProvider")
     public void inputTest(int num, long answer) {
-        assertEquals(new Variant14().Integer(num), answer);
+        assertEquals(new Variant14().integerTask(num), answer);
     }
     @Test(expectedExceptions = AssertionError.class)
     public void switchNegativeTest() {
-        new Variant14().Integer(45);
-        new Variant14().Integer(4);
-        new Variant14().Integer(4545);
+        new Variant14().integerTask(45);
+        new Variant14().integerTask(4);
+        new Variant14().integerTask(4545);
     }
     @DataProvider
     public Object[][] integerProvider() {
@@ -25,7 +25,7 @@ public class Variant14Test {
     //Bool
     @Test(dataProvider = "booleanProvider")
     public void booleanTest(int A, int B, int C, boolean answer) {
-        assertEquals(new Variant14().Boolean(A, B, C), answer);
+        assertEquals(new Variant14().booleanTask(A, B, C), answer);
     }
     @DataProvider
     public Object[][] booleanProvider() {
@@ -35,7 +35,7 @@ public class Variant14Test {
     //If
     @Test(dataProvider = "ifProvider")
     public void ifTest(int a, int b, int c, int[] answer) {
-        assertEquals(new Variant14().If(a, b, c), answer);
+        assertEquals(new Variant14().ifTask(a, b, c), answer);
     }
     @DataProvider
     public Object[][] ifProvider() {
@@ -46,7 +46,7 @@ public class Variant14Test {
     //Switch
     @Test(dataProvider = "switchProvider")
     public void switchTest(int num, double value, double[] answer) {
-        assertEquals(new Variant14().Case(num, value), answer);
+        assertEquals(new Variant14().caseTask(num, value), answer);
     }
 
     @DataProvider
@@ -58,7 +58,7 @@ public class Variant14Test {
     //For
     @Test(dataProvider = "forProvider")
     public void forTest(int N, int[] answer) {
-        assertEquals(new Variant14().For(N), answer);
+        assertEquals(new Variant14().forTask(N), answer);
     }
     @DataProvider
     public Object[][] forProvider() {
@@ -69,7 +69,7 @@ public class Variant14Test {
     //While
     @Test(dataProvider = "whileProvider")
     public void whileTest(double a, double[] answer) {
-        assertEquals(new Variant14().While(a), answer);
+        assertEquals(new Variant14().whileTask(a), answer);
     }
     @DataProvider
     public Object[][] whileProvider() {
@@ -77,7 +77,7 @@ public class Variant14Test {
     }
     @Test(expectedExceptions = AssertionError.class, dataProvider = "negativeWhileProvider")
     public void negativeWhileTest(double a) {
-        new Variant14().While(a);
+        new Variant14().whileTask(a);
     }
     @DataProvider
     public Object[][] negativeWhileProvider() {
@@ -87,7 +87,7 @@ public class Variant14Test {
     //Array
     @Test(dataProvider = "arrayProvider")
     public void arrayTest(double[] array, int n, double[] answer) {
-        assertEquals(new Variant14().Array(array, n), answer);
+        assertEquals(new Variant14().arrayTask(array, n), answer);
     }
     @DataProvider
     public Object[][] arrayProvider() {
@@ -98,26 +98,26 @@ public class Variant14Test {
 
     //Matrix
     @Test(dataProvider = "matrixProvider")
-    public void MatrixTest(int[][] input, int n, int[] output) {
-        assertEquals(new Variant14().Matrix(input, n), output);
+    public void matrixTest(int[][] input, int n, int[] output) {
+        assertEquals(new Variant14().matrixTask(input, n), output);
     }
     @DataProvider
     public Object[][] matrixProvider() {
-        int[][] input = {{2, 3, 6, 9},
+        int[][] input1 = {{2, 3, 6, 9},
                 {34, 98, -9, 2},
                 {-4, 2, 1, 6},
                 {-98, 8, 1, 5}};
 
-        int[] input1 = {2, 3, 6, 9, 8, 1, 5, 34, 98, -9, 1, 6, -4, 2, 2, -98 };
+        int[] output1 = {2, 34, -4, -98, 8, 1, 5, 3, 98, 2, 1, 6, 6, -9, 2, 9 };
 
         int[][] input2 = {{-98, 8, 1, 5},
                 {-4, 2, 1, 6},
                 {34, 98, -9, 2},
                 {2, 3, 6, 9}};
 
-        int[] input3 = {-98, 8 ,1, 5, 3, 6, 9 ,-4, 2 ,1, -9, 2 ,34, 98, 6, 2 };
+        int[] output2 = {-98, -4, 34, 2, 3, 6, 9, 8, 2, 98, -9, 2, 1, 1, 6, 5 };
 
-        return new Object[][] { {input, 4, input1}, { input2, 4, input3 } };
+        return new Object[][] { {input1, 4, output1}, { input2, 4, output2 } };
 
     }
 }

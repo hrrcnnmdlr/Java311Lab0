@@ -2,7 +2,7 @@ package lab0;
 
 public class Variant14 {
 
-    public int Integer(int num) {
+    public int integerTask(int num) {
         //Дано трехзначное число. В нем зачеркнули первую справа цифру и приписали ее слева. Вывести полученное число.
         assert num > 100 && num < 999: "The number must be three digits";
         int third = num % 10;
@@ -11,12 +11,12 @@ public class Variant14 {
         return num;
     }
 
-    public boolean Boolean(int A, int B, int C) {
+    public boolean booleanTask(int A, int B, int C) {
         //Даны три целых числа: A, B, C. Проверить истинность высказывания: «Ровно одно из чисел A, B, C положительное».
         return A > 0 && B < 0 && C < 0 || B > 0 && A < 0 && C < 0 || C > 0 && B < 0 && A < 0;
     }
 
-    public static int[] If(int a, int b, int c) {
+    public static int[] ifTask(int a, int b, int c) {
         //If14. Даны три числа. Вывести вначале наименьшее, а затем наибольшее из данных чисел.
         int min = a;
         int max = a;
@@ -27,7 +27,7 @@ public class Variant14 {
         return new int[]{min, max};
     }
 
-    public double[] Case(int num, double value) {
+    public double[] caseTask(int num, double value) {
         /*Элементы равностороннего треугольника пронумерованы следующим образом:
         1 — сторона a, 2 — радиус R1 вписанной окружности (R1 = a·(3)^(1/2)/6),
         3 — радиус R2 описанной окружности (R2 = 2·R1), 4 — площадь S = a^2·3^(1/2))/4.
@@ -52,14 +52,14 @@ public class Variant14 {
         r1 = (a * Math.sqrt(3) / 6);
         r2 = (2 * a * Math.sqrt(3) / 6);
         s = a * a * Math.sqrt(3) / 4;
-        System.out.println(a);
-        System.out.println(r1);
-        System.out.println(r2);
-        System.out.println(s);
+        //System.out.println(a);
+        //System.out.println(r1);
+        //System.out.println(r2);
+        //System.out.println(s);
         return new double[]{a, r1, r2, s};
     }
 
-    public static int[] For (int N) {
+    public static int[] forTask(int N) {
         /*
         Дано целое число N (> 0). Найти квадрат данного числа, используя для его вычисления следующую формулу:
         N2 = 1 + 3 + 5 + … + (2·N – 1).
@@ -68,7 +68,7 @@ public class Variant14 {
          */
         int[] answer = new int[N];
         answer[0] = 1;
-        System.out.println(answer[0]);
+        //System.out.println(answer[0]);
         for (int i = 3, k = 1; k < N; i=i+2, k++) {
             answer[k] = answer[k-1] + i;
             //System.out.println(answer[k]);
@@ -76,7 +76,7 @@ public class Variant14 {
         return answer;
     }
 
-    public static double[] While(double A) {
+    public static double[] whileTask(double A) {
         /*
             Дано число A (> 1). Вывести наибольшее из целых чисел K, для которых сумма 1 + 1/2 + … + 1/K
             будет меньше A, и саму эту сумму.
@@ -91,7 +91,7 @@ public class Variant14 {
         return new double[] {k, sum};
     }
 
-    public static double[] Array(double[] A, int N) {
+    public static double[] arrayTask(double[] A, int N) {
         /*
         Дан массив A размера N. Вывести вначале его элементы с четными номерами (в порядке возрастания номеров),
         а затем — элементы с нечетными номерами (также в порядке возрастания номеров):
@@ -110,7 +110,7 @@ public class Variant14 {
         return answer;
     }
 
-    public static int[] Matrix(int[][] A, int M) {
+    public static int[] matrixTask(int[][] A, int M) {
         /*
         Дана квадратная матрица A порядка M. Начиная с элемента A1,1,
         вывести ее элементы следующим образом («уголками»):
@@ -125,8 +125,8 @@ public class Variant14 {
         for(int i = 0, v = 0; i < M; ++i){
 
             for(int j = 0; j < M - i; ++j){
-                //System.out.print(A[i][j] + " ");
-                answer[v++] = A[i][j];
+                //System.out.print(A[j][i] + " ");
+                answer[v++] = A[j][i];
             }
 
             for(int j = i + 1; j < M; ++j){

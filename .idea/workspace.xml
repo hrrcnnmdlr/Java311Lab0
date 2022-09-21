@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106cf616-ff8e-42fb-93e5-7df68fbf1bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab0/Variant14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lab0/Variant14Test.java" afterDir="false" />
+    <list default="true" id="106cf616-ff8e-42fb-93e5-7df68fbf1bc5" name="Changes" comment="o">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab0/Variant14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab0/Variant14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lab0/Variant14Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lab0/Variant14Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,8 +187,16 @@
       <updated>1663706908987</updated>
       <workItem from="1663706912046" duration="10740000" />
       <workItem from="1663717815741" duration="1025000" />
-      <workItem from="1663738086752" duration="2627000" />
+      <workItem from="1663738086752" duration="4973000" />
     </task>
+    <task id="LOCAL-00001" summary="o">
+      <created>1663741236184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663741236184</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,5 +215,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="o" />
+    <option name="LAST_COMMIT_MESSAGE" value="o" />
   </component>
 </project>
